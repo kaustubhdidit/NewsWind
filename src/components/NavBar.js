@@ -1,10 +1,11 @@
 
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from "react-router-dom";
-export class navbar extends Component {
+// export class navbar extends Component {   // converting to function based component
 
+const navbar=(props)=>{
 
-  render() {
+  // render() {
     return (
       <div>
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -16,7 +17,7 @@ export class navbar extends Component {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+          <Link className="nav-link" aria-current="page" to="/">General</Link>
         </li>
 
         <li className="nav-item">
@@ -71,7 +72,7 @@ export class navbar extends Component {
 </nav>
       </div>
     )
-  }
+  // }
 }
 
 export default navbar
